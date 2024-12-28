@@ -1,29 +1,34 @@
-This project demonstrates the use of Fast Fourier Transform (FFT) to analyze the frequency components of mixed signals, including a target signal, a jammer signal, and noise. It visualizes the time-domain and frequency-domain representations of these signals, providing insights into their spectral properties.
+# Signal Analysis with Target, Jammer, and Noise
 
-Features
+## Overview
 
-Signal Generation:
+This project demonstrates signal processing techniques to analyze a mixed signal composed of a target signal, jammer signal, and noise. Using Python libraries such as NumPy, Matplotlib, and SciPy, the project visualizes the signals in both the time domain and frequency domain (via FFT).
 
-Target Signal: A sine wave at 50 Hz.
+---
 
-Jammer Signal: A sine wave at 80 Hz with a phase shift.
+## Features
 
-Noise: Random noise with configurable power.
+- **Signal Composition**:
+  - **Target Signal**: A sine wave with a frequency of 50 Hz.
+  - **Jammer Signal**: A sine wave with a frequency of 80 Hz and a phase shift.
+  - **Noise**: Gaussian random noise added to simulate real-world conditions.
 
-Signal Mixing: Combines the target signal, jammer signal, and noise into a single mixed signal.
+- **Visualization**:
+  - Time-domain plots of the target signal, jammer signal, noise, and the combined mixed signal.
+  - Frequency-domain analysis using Fast Fourier Transform (FFT).
 
-Visualization:
+- **Frequency Analysis**:
+  - Visualize frequency spectra of individual components and the mixed signal.
 
-Time-domain plots for individual signals and the mixed signal.
+---
 
-Frequency-domain analysis using FFT to display magnitude spectra.
+## Requirements
 
-Requirements
+To run the code, you need the following Python libraries installed:
+- `numpy`
+- `matplotlib`
+- `scipy`
 
-Python 3.x
-
-NumPy
-
-Matplotlib
-
-SciPy
+You can install these dependencies using:
+```bash
+pip install numpy matplotlib scipy
